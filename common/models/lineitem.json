@@ -1,0 +1,30 @@
+{
+  "name": "LineItem",
+  "base": "Model",
+  "idInjection": true,
+  "properties": {
+    "SubTotal": {
+      "type": "number",
+      "required": true
+    },
+    "Quantity": {
+      "type": "number"
+    },
+    "Tax": {
+      "type": "number"
+    },
+    "Total": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Order": {
+      "type": "belongsTo",
+      "model": "LineItem"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

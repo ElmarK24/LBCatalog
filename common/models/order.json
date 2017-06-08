@@ -1,0 +1,26 @@
+{
+  "name": "Order",
+  "base": "Model",
+  "properties": {
+    "SubTotal": {
+      "type": "number"
+    },
+    "Tax": {
+      "type": "number"
+    },
+    "Total": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+      "OrderLineItems": {
+      "type": "hasMany",
+      "model": "lineitem",
+      "required": true
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

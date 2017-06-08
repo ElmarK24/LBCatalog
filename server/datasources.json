@@ -1,0 +1,20 @@
+{
+  "olddb": {
+    "host": "demo.strongloop.com",
+    "port": 27017,
+    "database": "demo",
+    "xusername": "demo",
+    "xpassword": "L00pBack",
+    "name": "olddb",
+    "connector": "mongodb"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "demo",
+    "xusername": "",
+    "xpassword": "",
+    "name": "db",
+    "connector": "mongodb"
+  }
+}

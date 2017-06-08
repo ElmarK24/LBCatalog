@@ -1,0 +1,17 @@
+{
+  "name": "Product",
+  "base": "Model",
+  "idInjection": true,
+  "properties": {
+    "Name": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

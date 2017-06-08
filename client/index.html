@@ -1,0 +1,44 @@
+<html lang="en" >
+<head>
+  <!-- Load Stylesheet -->
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+
+  <!-- Fix for old browsers -->
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+
+<body ng-app="App">
+<h2><center>Catalog</center></h2>
+<div ng-controller="AppCtrl">
+  <div ng-repeat="Product in Products">
+    <center><h3>{{Product.Name}}</h3>
+    <label>${{Product.Price}}</label>
+    <button type = "button" ng-click = "addItem(Order, Product)">Buy Now</button></center>
+  </div>
+</div>
+
+<h4>Order Totals</h4>
+<div ng-repeat="LineItem in Order.LineItems">
+  {{LineItem.Product.name}}
+  {{LineItem.Total}}
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+
+<script src="public/js/app.js"></script>
+<script src="public/js/Product-Service.js"></script>
+
+</body>
+</html>
